@@ -1,0 +1,37 @@
+{
+    "name": "api",
+    "version": "1.0.0",
+    "description": "fullfillment backend",
+    "main": "main.js",
+    "scripts": {
+        "build": "npx tsc",
+        "start_build": "node dist/main.js",
+        "dev": "nodemon -L ./app/main.ts",
+        "lint": "eslint ./**/*.ts",
+        "lint:fix": "eslint ./**/*.ts --fix"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@prisma/client": "^5.7.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.10.5",
+        "@typescript-eslint/eslint-plugin": "^6.15.0",
+        "@typescript-eslint/parser": "^6.15.0",
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-prettier": "^5.1.0",
+        "nodemon": "^3.0.2",
+        "prettier": "^3.1.1",
+        "prisma": "^5.7.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    }
+}
